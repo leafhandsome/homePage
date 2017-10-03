@@ -1,0 +1,91 @@
+@import'base.less';
+@color:#26435E;
+@right-color:#788D91;
+.view{
+  width: 677px;
+  margin: 0 auto;
+  .left{
+    width: 148px;
+    color: #94A3AF;
+    background-color: #254765;
+    padding: 25px 0 50px 25px;
+    .loge{   
+      img{
+        width: 100px;
+        height: 127px;
+      }
+      
+    }
+    .information{
+      li{
+        overflow: hidden;       
+        height: 25px;
+        // line-height: 25px;
+        font-size: 12px;
+        margin-top: 28px;
+        i{
+          vertical-align: middle;
+          font-size: 25px;
+        }
+      }
+    }
+    .skill{
+      margin-top: 50px;
+      .progress{
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        height: 10px;
+        margin: 10px 0;
+        background-color: #92A6B0;
+      }
+      .master{
+        width: 90%;
+      }
+      .skilled{
+        width: 80%;
+      }
+        }
+     .hobbies-title{
+       margin-top: 30px;
+       font:700 20px '微软雅黑';
+     }   
+    .hobbies{
+      padding-right: 24px;
+      li{
+        height: 70px;
+        // line-height: 50px;
+        width: 50%;
+        text-align: center;
+        padding-top: 20px;
+        float: left;
+        i{
+          font-size: 30px;
+        }
+      }
+    }    
+  }
+  .right{
+    color:@right-color;
+    width: 477px;
+    padding-left: 27px;
+    .module{
+      margin-top: 40px;
+      h1{
+        color: @color;
+        font:700 30px '微软雅黑';
+      }
+      h2{
+        color: @color;
+        font:700 20px '微软雅黑';
+        i{
+          vertical-align: middle;
+          font-size: 35px;
+          // color: white;
+          // background-color: @color;
+        }
+      }
+    }
+    
+  }
+}

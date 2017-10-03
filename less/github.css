@@ -1,0 +1,79 @@
+@import 'base.less';
+.view {
+  width: 677px;
+  margin: 0 auto;
+}
+.view .left {
+  width: 148px;
+  color: #94A3AF;
+  background-color: #254765;
+  padding: 25px 0 50px 25px;
+}
+.view .left .loge img {
+  width: 100px;
+  height: 127px;
+}
+.view .left .information li {
+  overflow: hidden;
+  height: 25px;
+  font-size: 12px;
+  margin-top: 28px;
+}
+.view .left .information li i {
+  vertical-align: middle;
+  font-size: 25px;
+}
+.view .left .skill {
+  margin-top: 50px;
+}
+.view .left .skill .progress {
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  height: 10px;
+  margin: 10px 0;
+  background-color: #92A6B0;
+}
+.view .left .skill .master {
+  width: 90%;
+}
+.view .left .skill .skilled {
+  width: 80%;
+}
+.view .left .hobbies-title {
+  margin-top: 30px;
+  font: 700 20px '微软雅黑';
+}
+.view .left .hobbies {
+  padding-right: 24px;
+}
+.view .left .hobbies li {
+  height: 70px;
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  float: left;
+}
+.view .left .hobbies li i {
+  font-size: 30px;
+}
+.view .right {
+  color: #788D91;
+  width: 477px;
+  padding-left: 27px;
+}
+.view .right .module {
+  margin-top: 40px;
+}
+.view .right .module h1 {
+  color: #26435E;
+  font: 700 30px '微软雅黑';
+}
+.view .right .module h2 {
+  color: #26435E;
+  font: 700 20px '微软雅黑';
+}
+.view .right .module h2 i {
+  vertical-align: middle;
+  font-size: 35px;
+}
