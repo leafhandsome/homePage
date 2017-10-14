@@ -1,13 +1,71 @@
-@import 'base.less';
+/*css��ʼ������*/
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+image,
+input {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  border: none;
+}
+h1,
+h2,
+h3,
+b {
+  font-weight: normal;
+}
+body {
+  background-color: #F6F6F6;
+  font: normal normal 12px Microsoft YaHei;
+  color: #666;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
 .view {
-  width: 677px;
+  width: 1200px;
   margin: 0 auto;
 }
 .view .left {
-  width: 148px;
+  width: 170px;
   color: #94A3AF;
   background-color: #254765;
-  padding: 25px 0 50px 25px;
+  padding: 25px 0 500px 25px;
 }
 .view .left .loge img {
   width: 100px;
@@ -59,7 +117,7 @@
 }
 .view .right {
   color: #788D91;
-  width: 477px;
+  width: 960px;
   padding-left: 27px;
 }
 .view .right .module {

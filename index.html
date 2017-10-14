@@ -24,17 +24,23 @@
                 <li class="email"><i class="iconfont icon-youxiang1"></i><span>binbinyou_ni@163.com</span></li>
             </ul>
             <ul class="skill">
-                <li>photoshop</li>
+                <li>jQuery</li>
                 <li class="progress master">90%</li>
-                <li>makman</li>
+                <li>zepto</li>
                 <li class="progress master">90%</li>
-                <li>koala</li>
+                <li>swiper</li>
                 <li class="progress master">90%</li>
-                <li>git</li>
+                <li>Bootstrop</li>
                 <li class="progress skilled">80%</li>
-                <li>svn</li>
+                <li>less</li>
+                <li class="progress skilled">80%</li>
+                <li>Angular </li>
+                <li class="progress skilled">60%</li>
+                <li>Vue </li>
                 <li class="progress skilled">80%</li>
                 <li>gulp</li>
+                <li class="progress skilled">80%</li>
+                <li>mongo</li>
                 <li class="progress skilled">80%</li>
             </ul>
             <h2 class="hobbies-title">兴趣爱好</h2>
@@ -56,16 +62,68 @@
                 <p>不负青春，不负你</p>
             </div>
             <div class="module">
-                <h2><i class="iconfont icon-jiaoyu"></i><span>教育背景</span></h2>
-                <p>不负青春，不负你</p>
+                <h2><i class="iconfont icon-jiaoyu"></i><span>那些操作会造成内存泄漏？</span></h2>
+                <p>1.内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。</p>
+                <p>2.垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。</p>
+                <p>3.setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。</p>
+                <p>4.闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环</p>
+
+
             </div>
             <div class="module">
-                <h2><i class="iconfont icon-experience"></i><span>工作经验</span></h2>
-                <p>不负青春，不负你</p>
+                <h2><i class="iconfont icon-experience"></i><span>如何对网站的文件和资源进行优化?</span></h2>
+                <p>1. 文件合并(目的是减少 http 请求):Web 性能优化最佳实践中最重要的一条是减少 HTTP 请求,它也是 YSlow 中比重最大的一 条规则(YSlow 是雅虎发布的基于 firefox 的网站性能平分工具,共 23 条规则).减少 HTTP 请求的方案主要有合并 JavaScript 和 CSS 文 件、CSS Sprites、图像映射 (Image Map,一幅图中多个区域指定不同 url)、使用 Data URI 来编码图片(包含页面但无需额外 http
+                    请 求的 url,IE 不支持)、字体图标(将所有图标打包成字体库,减少请求;具有矢量性,可保证清晰度;使用灵活,便于维护,@font-face 声明 字体)
+                </p>
+                <p> 2.文件最小化/文件压缩:目的是直接减少文件下载的体积</p>
+                <p>3.使用 CDN(内容分发网络) 托管:其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节,使内 容传输的更快、更稳定.通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络,CDN 系统能够实 时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服 务节点上
+                </p>
+                <p>4.缓存的使用:多个域名?供缓存</p>
+
+            </div>
+
+            <div class="module">
+                <h2><i class="iconfont icon-xiangmujingyan"></i><span>如何编写高性能的 JavaScript?</span></h2>
+                <p> 1.使用 DocumentFragment 优化多次 append</p>
+                <p> 2.通过模板元素 clone ,替代 createElement</p>
+                <p> 3.使用一次 innerHTML 赋值代替构建 dom 元素</p>
+                <p> 4.使用 firstChild 和 nextSibling 代替 childNodes 遍历 dom 元素</p>
+                <p>5.使用 Array 做为 StringBuffer ,代替字符串拼接的操作</p>
+                <p> 6.将循环控制量保存到局部变量</p>
+                <p> 7.顺序无关的遍历时,用 while 替代 for</p>
+                <p>8.将条件分支,按可能性顺序从高到低排列</p>
+                <p> 9.在同一条件子的多( >2 )条件分支时,使用 switch 优于 if</p>
+                <p> 10.使用三目运算符替代条件分支</p>
+                <p> 11.需要不断执行的时候,优先考虑使用 setInterval</p>
             </div>
             <div class="module">
-                <h2><i class="iconfont icon-xiangmujingyan"></i><span>项目经验</span></h2>
-                <p>不负青春，不负你</p>
+                <h2><i class="iconfont icon-xiangmujingyan"></i><span>JavaScript 对象的几种创建方式?</span></h2>
+                <p> 1. 工厂模式</p>
+                <p> 2. 构造函数模式</p>
+                <p>3. 原型模式</br>
+                    好处是可以让所有对象实例共享它所包含的属性和方法 原型模式的最大问题是由其共享的本性所导致的,如果一个实例对象修改了引用类型的值,那么接下来的所有的新 实例对象读取到都是已修改后的引用类型的值
+                </p>
+                <p> 4. 混合构造函数和原型模式</br>
+                    构造函数模式用于定义实例属性,而原型模式用于定义方法和共享的属性 每个实例都会有自己的一份实例属性的副本,但同时又共享着对方法的引用,最大限度地节省了内存
+                </p>
+                <p>5. 动态原型模式</br>
+                    使用动态原型模式时,不能使用对象字面量重写原型.前面已经解释过了,如果在已经创建了实例的情况下重写原型, 那么就会切断现有实例与新原型之间的联系
+                </p>
+                <p> 6. 寄生构造函数模式</br>
+                    这种模式的基本思想是创建一个函数,该函数的作用仅仅是封装创建对象的代码,然后再返回新创建的对象 但是返回的对象与构造函数或者与构造函数的原型属性之间没有关系.不推荐使用这种模式
+                </p>
+                <p> 7. 稳妥构造函数模式</br>
+                    稳妥对象最适合在一些安全的环境中(这些环境中会禁止使用 this 和 new),或者在防止数据被其他应用程序(如 Mashup 程序)改动时使用.稳妥构造函数遵循与寄生构造函数类似的模式, 但有两点不同: 1.是新创建对象的实例方法不引用 this; 2.是不使用 new 操作符调用构造函数
+                </p>
+
+            </div>
+            <div class="module">
+                <h2><i class="iconfont icon-xiangmujingyan"></i><span>new 操作符具体干了什么呢?</span></h2>
+                <p>1.创建一个空对象,并且将 this 变量引向该对象,同时继承该对象的原型</p>
+                <p>2.属性和方法被加入到 this 引用的对象中</p>
+                <p>3.新创建的对象由 this 引用,并且最后隐式的返回 this</p>
+
+
             </div>
         </div>
 
